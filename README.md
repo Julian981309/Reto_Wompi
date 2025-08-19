@@ -1,20 +1,20 @@
-# 🧪 Reto de Automatización - Wompi (Nequi)
+#  Reto de Automatización - Wompi (Nequi)
 
 Este proyecto contiene la automatización de pruebas para la pasarela de
-pagos **Wompi**, utilizando el medio de pago **Nequi**.\
+pagos **Wompi**, utilizando el medio de pago **Nequi**.
 Se implementó en **Java**, con el patrón **Screenplay de Serenity BDD**
 y **Cucumber** para la definición de escenarios en Gherkin.
 
 ------------------------------------------------------------------------
 
-## 📂 Estructura de pruebas
+##  Estructura de pruebas
 
 Los escenarios cubren tanto **flujos exitosos** como **flujos
 alternos**:
 
 1.  **Transacción Nequi aprobada o declinada**
     -   amount_in_cents=200000, teléfono=3991111111 →
-        estadoFinal=APPROVED\
+        estadoFinal=APPROVED
     -   amount_in_cents=200000, teléfono=3992222222 →
         estadoFinal=DECLINED
 2.  **Falla por firma de integridad inválida**
@@ -26,7 +26,7 @@ alternos**:
 
 ------------------------------------------------------------------------
 
-## ▶️ Ejecución de pruebas
+##  Ejecución de pruebas
 
 Para ejecutar los escenarios:
 
@@ -34,48 +34,48 @@ Para ejecutar los escenarios:
 mvn clean verify
 ```
 
-Este comando: - Compila el proyecto\
-- Ejecuta los escenarios definidos en Cucumber\
+Este comando: - Compila el proyecto
+- Ejecuta los escenarios definidos en Cucumber
 - Genera los reportes de Serenity BDD y Cucumber
 
 ------------------------------------------------------------------------
 
-## 📊 Reportes
+##  Reportes
 
 Una vez finalizada la ejecución, los reportes estarán disponibles en:
 
--   **Reporte Serenity BDD (principal):**\
+-   **Reporte Serenity BDD (principal):**
     `target/site/serenity/index.html`
 
--   **Reporte Cucumber (alterno):**\
+-   **Reporte Cucumber (alterno):**
     `target/cucumber-reports.html`
 
 Los reportes incluyen métricas como: - Casos pasados / fallidos /
-ignorados\
-- Duración de cada escenario\
+ignorados
+- Duración de cada escenario
 - Evidencia paso a paso de cada ejecución
 
 ------------------------------------------------------------------------
 
-## ✅ Resultados de la última ejecución
+##  Resultados de la última ejecución
 
 Según los reportes, se ejecutaron **5 escenarios automatizados** y todos
 finalizaron con **estado exitoso (100%)**:
 
--   2 transacciones Nequi (aprobada y declinada)\
--   2 escenarios alternos (firma inválida y token ausente)\
+-   2 transacciones Nequi (aprobada y declinada)
+-   2 escenarios alternos (firma inválida y token ausente)
 -   1 escenario de sanidad (obtención de `acceptance_token`)
 
 ------------------------------------------------------------------------
 
-## 📌 Conclusiones
+##  Conclusiones
 
 -   La automatización valida correctamente **el ciclo de vida de una
-    transacción en Wompi con Nequi**.\
+    transacción en Wompi con Nequi**.
 -   El patrón **Screenplay** permitió una estructura clara y
-    reutilizable en las tareas.\
+    reutilizable en las tareas.
 -   **Serenity BDD** entregó reportes detallados que facilitan el
-    análisis de resultados.\
+    análisis de resultados.
 -   Se cubrieron tanto los **flujos exitosos** como los **flujos
     alternos**, garantizando robustez en las validaciones.\
 -   La ejecución fue exitosa con un **100% de pruebas aprobadas** en la
