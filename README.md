@@ -51,8 +51,8 @@ Una vez finalizada la ejecución, los reportes estarán disponibles en:
 -   **Reporte Cucumber (alterno):**
     `target/cucumber-reports.html`
 
-Los reportes incluyen métricas como: - Casos pasados / fallidos /
-ignorados
+Los reportes incluyen métricas como: 
+- Casos pasados / fallidos / ignorados
 - Duración de cada escenario
 - Evidencia paso a paso de cada ejecución
 
