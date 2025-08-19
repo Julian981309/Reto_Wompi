@@ -26,6 +26,23 @@ alternos**:
 
 ------------------------------------------------------------------------
 
+##  Clonar el repositorio
+
+Para descargar el proyecto en tu máquina local:
+
+```bash
+# Ubícate en la carpeta donde quieras guardar el proyecto
+cd C:\Users\....
+
+# Clona el repositorio
+git clone https://github.com/Julian981309/Reto_Wompi.git
+
+# Ingresa a la carpeta del proyecto
+cd Reto_Wompi
+```
+
+------------------------------------------------------------------------
+
 ##  Ejecución de pruebas
 
 Para ejecutar los escenarios:
