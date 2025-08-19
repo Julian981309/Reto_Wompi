@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="co.e2e.wompi.runners.WompiRunner" time="19.113" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\julia\Downloads\Programacion-Inicio\Reto-Wompi\target\test-classes;C:\Users\julia\Downloads\Programacion-Inicio\Reto-Wompi\target\classes;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-core\3.9.8\serenity-core-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-model\3.9.8\serenity-model-3.9.8.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\julia\.m2\repository\commons-net\commons-net\3.9.0\commons-net-3.9.0.jar;C:\Users\julia\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\julia\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\julia\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\julia\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\julia\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\julia\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\julia\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\julia\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\julia\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\julia\.m2\repository\com\thoughtworks\xstream\xstream\1.4.20\xstream-1.4.20.jar;C:\Users\julia\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\julia\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\julia\.m2\repository\com\typesafe\config\1.4.2\config-1.4.2.jar;C:\Users\julia\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\julia\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\julia\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\julia\.m2\repository\io\github\classgraph\classgraph\4.8.157\classgraph-4.8.157.jar;C:\Users\julia\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.2\caffeine-2.9.2.jar;C:\Users\julia\.m2\repository\org\ehcache\ehcache\3.10.8\ehcache-3.10.8.jar;C:\Users\julia\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\julia\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\julia\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\julia\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\julia\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-all\0.62.2\flexmark-all-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.62.2\flexmark-ext-abbreviation-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.62.2\flexmark-ext-admonition-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.62.2\flexmark-ext-anchorlink-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.62.2\flexmark-ext-aside-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.62.2\flexmark-ext-attributes-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.62.2\flexmark-ext-autolink-0.62.2.jar;C:\Users\julia\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.62.2\flexmark-ext-definition-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.62.2\flexmark-ext-emoji-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.62.2\flexmark-ext-enumerated-reference-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.62.2\flexmark-ext-escaped-character-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.62.2\flexmark-ext-footnotes-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.62.2\flexmark-ext-gfm-issues-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.62.2\flexmark-ext-gfm-strikethrough-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.62.2\flexmark-ext-gfm-tasklist-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.62.2\flexmark-ext-gfm-users-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.62.2\flexmark-ext-gitlab-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.62.2\flexmark-ext-jekyll-front-matter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.62.2\flexmark-ext-jekyll-tag-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.62.2\flexmark-ext-media-tags-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.62.2\flexmark-ext-macros-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.62.2\flexmark-ext-ins-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.62.2\flexmark-ext-xwiki-macros-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.62.2\flexmark-ext-superscript-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.62.2\flexmark-ext-toc-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.62.2\flexmark-ext-typographic-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.62.2\flexmark-ext-wikilink-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.62.2\flexmark-ext-yaml-front-matter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.62.2\flexmark-ext-youtube-embedded-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.62.2\flexmark-html2md-converter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.62.2\flexmark-jira-converter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.62.2\flexmark-pdf-converter-0.62.2.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.0\openhtmltopdf-core-1.0.0.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.0\openhtmltopdf-pdfbox-1.0.0.jar;C:\Users\julia\.m2\repository\org\apache\pdfbox\pdfbox\2.0.16\pdfbox-2.0.16.jar;C:\Users\julia\.m2\repository\org\apache\pdfbox\fontbox\2.0.16\fontbox-2.0.16.jar;C:\Users\julia\.m2\repository\org\apache\pdfbox\xmpbox\2.0.16\xmpbox-2.0.16.jar;C:\Users\julia\.m2\repository\de\rototor\pdfbox\graphics2d\0.24\graphics2d-0.24.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.0\openhtmltopdf-rtl-support-1.0.0.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\1.0.0\openhtmltopdf-jsoup-dom-converter-1.0.0.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.62.2\flexmark-profile-pegdown-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\julia\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.62.2\flexmark-youtrack-converter-0.62.2.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-reports\3.9.8\serenity-reports-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-stats\3.9.8\serenity-stats-3.9.8.jar;C:\Users\julia\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.0\kotlin-stdlib-1.9.0.jar;C:\Users\julia\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.0\kotlin-stdlib-common-1.9.0.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-reports-configuration\3.9.8\serenity-reports-configuration-3.9.8.jar;C:\Users\julia\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\julia\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-report-resources\3.9.8\serenity-report-resources-3.9.8.jar;C:\Users\julia\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\julia\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\julia\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\julia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-java\4.10.0\selenium-java-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.10.0\selenium-devtools-v112-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.10.0\selenium-devtools-v113-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.10.0\selenium-devtools-v114-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.10.0\selenium-devtools-v85-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.10.0\selenium-remote-driver-4.10.0.jar;C:\Users\julia\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\julia\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\julia\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\julia\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\julia\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\julia\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.10.0\selenium-safari-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-api\4.10.0\selenium-api-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-support\4.10.0\selenium-support-4.10.0.jar;C:\Users\julia\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\julia\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\julia\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-json\4.10.0\selenium-json-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.10.0\selenium-chrome-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.10.0\selenium-chromium-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.10.0\selenium-manager-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.10.0\selenium-firefox-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-http\4.10.0\selenium-http-4.10.0.jar;C:\Users\julia\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.10.0\selenium-edge-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.10.0\selenium-ie-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit\3.0.0\htmlunit-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit-core-js\3.0.0\htmlunit-core-js-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\neko-htmlunit\3.0.0\neko-htmlunit-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit-cssparser\3.0.0\htmlunit-cssparser-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit-xpath\3.0.0\htmlunit-xpath-3.0.0.jar;C:\Users\julia\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\julia\.m2\repository\com\shapesecurity\salvation2\3.0.1\salvation2-3.0.1.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.51.v20230217\websocket-client-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-client\9.4.51.v20230217\jetty-client-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-http\9.4.51.v20230217\jetty-http-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-util\9.4.51.v20230217\jetty-util-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-io\9.4.51.v20230217\jetty-io-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.51.v20230217\websocket-common-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.51.v20230217\websocket-api-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.10.0\htmlunit3-driver-4.10.0.jar;C:\Users\julia\.m2\repository\io\appium\java-client\8.3.0\java-client-8.3.0.jar;C:\Users\julia\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\julia\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\julia\.m2\repository\org\apache\groovy\groovy\4.0.10\groovy-4.0.10.jar;C:\Users\julia\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\julia\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\julia\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\julia\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\julia\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\julia\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\julia\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\julia\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\julia\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\julia\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\julia\.m2\repository\com\paulhammant\ngwebdriver\1.1.6\ngwebdriver-1.1.6.jar;C:\Users\julia\.m2\repository\joda-time\joda-time\2.12.2\joda-time-2.12.2.jar;C:\Users\julia\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\julia\.m2\repository\com\google\jimfs\jimfs\1.2\jimfs-1.2.jar;C:\Users\julia\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\julia\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\julia\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\julia\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\julia\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\julia\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\julia\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\julia\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\julia\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-screenplay\3.9.8\serenity-screenplay-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-rest-assured\3.9.8\serenity-rest-assured-3.9.8.jar;C:\Users\julia\.m2\repository\org\apache\groovy\groovy-json\4.0.10\groovy-json-4.0.10.jar;C:\Users\julia\.m2\repository\org\apache\groovy\groovy-xml\4.0.10\groovy-xml-4.0.10.jar;C:\Users\julia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-cucumber\3.9.8\serenity-cucumber-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\3.9.8\serenity-screenplay-webdriver-3.9.8.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-core\7.12.1\cucumber-core-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-gherkin\7.12.1\cucumber-gherkin-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.12.1\cucumber-gherkin-messages-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\julia\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\julia\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\julia\.m2\repository\io\cucumber\datatable\7.12.1\datatable-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-plugin\7.12.1\cucumber-plugin-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\docstring\7.12.1\docstring-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\html-formatter\20.3.1\html-formatter-20.3.1.jar;C:\Users\julia\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\julia\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-junit\7.12.1\cucumber-junit-7.12.1.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\julia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\julia\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\julia\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\julia\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\julia\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\julia\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\julia\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\julia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\julia\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\julia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\julia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\jdk-17.0.12_windows-x64_bin\jdk-17.0.12\bin"/>
+    <property name="sun.java.command" value="C:\Users\julia\AppData\Local\Temp\surefire4664195226705386075\surefirebooter-20250818214219281_3.jar C:\Users\julia\AppData\Local\Temp\surefire4664195226705386075 2025-08-18T21-42-18_945-jvmRun1 surefire-20250818214219281_1tmp surefire_0-20250818214219281_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\julia\Downloads\Programacion-Inicio\Reto-Wompi\target\test-classes;C:\Users\julia\Downloads\Programacion-Inicio\Reto-Wompi\target\classes;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-core\3.9.8\serenity-core-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-model\3.9.8\serenity-model-3.9.8.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\julia\.m2\repository\commons-net\commons-net\3.9.0\commons-net-3.9.0.jar;C:\Users\julia\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\julia\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\julia\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\julia\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\julia\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\julia\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\julia\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\julia\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\julia\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\julia\.m2\repository\com\thoughtworks\xstream\xstream\1.4.20\xstream-1.4.20.jar;C:\Users\julia\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\julia\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\julia\.m2\repository\com\typesafe\config\1.4.2\config-1.4.2.jar;C:\Users\julia\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\julia\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\julia\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\julia\.m2\repository\io\github\classgraph\classgraph\4.8.157\classgraph-4.8.157.jar;C:\Users\julia\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.2\caffeine-2.9.2.jar;C:\Users\julia\.m2\repository\org\ehcache\ehcache\3.10.8\ehcache-3.10.8.jar;C:\Users\julia\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\julia\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\julia\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\julia\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\julia\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-all\0.62.2\flexmark-all-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.62.2\flexmark-ext-abbreviation-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.62.2\flexmark-ext-admonition-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.62.2\flexmark-ext-anchorlink-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.62.2\flexmark-ext-aside-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.62.2\flexmark-ext-attributes-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.62.2\flexmark-ext-autolink-0.62.2.jar;C:\Users\julia\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.62.2\flexmark-ext-definition-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.62.2\flexmark-ext-emoji-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.62.2\flexmark-ext-enumerated-reference-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.62.2\flexmark-ext-escaped-character-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.62.2\flexmark-ext-footnotes-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.62.2\flexmark-ext-gfm-issues-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.62.2\flexmark-ext-gfm-strikethrough-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.62.2\flexmark-ext-gfm-tasklist-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.62.2\flexmark-ext-gfm-users-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.62.2\flexmark-ext-gitlab-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.62.2\flexmark-ext-jekyll-front-matter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.62.2\flexmark-ext-jekyll-tag-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.62.2\flexmark-ext-media-tags-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.62.2\flexmark-ext-macros-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.62.2\flexmark-ext-ins-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.62.2\flexmark-ext-xwiki-macros-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.62.2\flexmark-ext-superscript-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.62.2\flexmark-ext-toc-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.62.2\flexmark-ext-typographic-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.62.2\flexmark-ext-wikilink-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.62.2\flexmark-ext-yaml-front-matter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.62.2\flexmark-ext-youtube-embedded-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.62.2\flexmark-html2md-converter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.62.2\flexmark-jira-converter-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.62.2\flexmark-pdf-converter-0.62.2.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.0\openhtmltopdf-core-1.0.0.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.0\openhtmltopdf-pdfbox-1.0.0.jar;C:\Users\julia\.m2\repository\org\apache\pdfbox\pdfbox\2.0.16\pdfbox-2.0.16.jar;C:\Users\julia\.m2\repository\org\apache\pdfbox\fontbox\2.0.16\fontbox-2.0.16.jar;C:\Users\julia\.m2\repository\org\apache\pdfbox\xmpbox\2.0.16\xmpbox-2.0.16.jar;C:\Users\julia\.m2\repository\de\rototor\pdfbox\graphics2d\0.24\graphics2d-0.24.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.0\openhtmltopdf-rtl-support-1.0.0.jar;C:\Users\julia\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\1.0.0\openhtmltopdf-jsoup-dom-converter-1.0.0.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.62.2\flexmark-profile-pegdown-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\julia\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\julia\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.62.2\flexmark-youtrack-converter-0.62.2.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-reports\3.9.8\serenity-reports-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-stats\3.9.8\serenity-stats-3.9.8.jar;C:\Users\julia\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.0\kotlin-stdlib-1.9.0.jar;C:\Users\julia\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.0\kotlin-stdlib-common-1.9.0.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-reports-configuration\3.9.8\serenity-reports-configuration-3.9.8.jar;C:\Users\julia\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\julia\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-report-resources\3.9.8\serenity-report-resources-3.9.8.jar;C:\Users\julia\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\julia\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\julia\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\julia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-java\4.10.0\selenium-java-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.10.0\selenium-devtools-v112-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.10.0\selenium-devtools-v113-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.10.0\selenium-devtools-v114-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.10.0\selenium-devtools-v85-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.10.0\selenium-remote-driver-4.10.0.jar;C:\Users\julia\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\julia\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\julia\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\julia\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\julia\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\julia\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\julia\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\julia\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.10.0\selenium-safari-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-api\4.10.0\selenium-api-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-support\4.10.0\selenium-support-4.10.0.jar;C:\Users\julia\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\julia\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\julia\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-json\4.10.0\selenium-json-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.10.0\selenium-chrome-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.10.0\selenium-chromium-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.10.0\selenium-manager-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.10.0\selenium-firefox-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-http\4.10.0\selenium-http-4.10.0.jar;C:\Users\julia\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.10.0\selenium-edge-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.10.0\selenium-ie-driver-4.10.0.jar;C:\Users\julia\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit\3.0.0\htmlunit-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit-core-js\3.0.0\htmlunit-core-js-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\neko-htmlunit\3.0.0\neko-htmlunit-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit-cssparser\3.0.0\htmlunit-cssparser-3.0.0.jar;C:\Users\julia\.m2\repository\org\htmlunit\htmlunit-xpath\3.0.0\htmlunit-xpath-3.0.0.jar;C:\Users\julia\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\julia\.m2\repository\com\shapesecurity\salvation2\3.0.1\salvation2-3.0.1.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.51.v20230217\websocket-client-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-client\9.4.51.v20230217\jetty-client-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-http\9.4.51.v20230217\jetty-http-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-util\9.4.51.v20230217\jetty-util-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\jetty-io\9.4.51.v20230217\jetty-io-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.51.v20230217\websocket-common-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.51.v20230217\websocket-api-9.4.51.v20230217.jar;C:\Users\julia\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.10.0\htmlunit3-driver-4.10.0.jar;C:\Users\julia\.m2\repository\io\appium\java-client\8.3.0\java-client-8.3.0.jar;C:\Users\julia\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\julia\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\julia\.m2\repository\org\apache\groovy\groovy\4.0.10\groovy-4.0.10.jar;C:\Users\julia\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\julia\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\julia\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\julia\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\julia\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\julia\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\julia\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\julia\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\julia\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\julia\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\julia\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\julia\.m2\repository\com\paulhammant\ngwebdriver\1.1.6\ngwebdriver-1.1.6.jar;C:\Users\julia\.m2\repository\joda-time\joda-time\2.12.2\joda-time-2.12.2.jar;C:\Users\julia\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\julia\.m2\repository\com\google\jimfs\jimfs\1.2\jimfs-1.2.jar;C:\Users\julia\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\julia\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\julia\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\julia\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\julia\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\julia\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\julia\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\julia\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\julia\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-screenplay\3.9.8\serenity-screenplay-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-rest-assured\3.9.8\serenity-rest-assured-3.9.8.jar;C:\Users\julia\.m2\repository\org\apache\groovy\groovy-json\4.0.10\groovy-json-4.0.10.jar;C:\Users\julia\.m2\repository\org\apache\groovy\groovy-xml\4.0.10\groovy-xml-4.0.10.jar;C:\Users\julia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-cucumber\3.9.8\serenity-cucumber-3.9.8.jar;C:\Users\julia\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\3.9.8\serenity-screenplay-webdriver-3.9.8.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-core\7.12.1\cucumber-core-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-gherkin\7.12.1\cucumber-gherkin-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.12.1\cucumber-gherkin-messages-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\julia\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\julia\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\julia\.m2\repository\io\cucumber\datatable\7.12.1\datatable-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-plugin\7.12.1\cucumber-plugin-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\docstring\7.12.1\docstring-7.12.1.jar;C:\Users\julia\.m2\repository\io\cucumber\html-formatter\20.3.1\html-formatter-20.3.1.jar;C:\Users\julia\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\julia\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-junit\7.12.1\cucumber-junit-7.12.1.jar;C:\Users\julia\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\julia\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\julia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\julia\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\julia\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\julia\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\julia\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\julia\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\julia\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\julia\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\julia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\julia\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\julia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\julia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\julia"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\jdk-17.0.12_windows-x64_bin\jdk-17.0.12"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\julia\Downloads\Programacion-Inicio\Reto-Wompi"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\julia\AppData\Local\Temp\surefire4664195226705386075\surefirebooter-20250818214219281_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="julia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\julia\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\julia\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\julia\Downloads\Programacion-Inicio\Reto-Wompi"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\jdk-17.0.12_windows-x64_bin\jdk-17.0.12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\National Instruments\Shared\OpenVINO\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI;C:\Program Files (x86)\IVI Foundation\IVI\bin;C:\Program Files\IVI Foundation\IVI\bin;C:\Program Files\HP\HP One Agent;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Muse Hub\lib;C:\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;C:\jdk-17.0.12_windows-x64_bin\jdk-17.0.12\bin;C:\Users\julia\AppData\Local\Microsoft\WindowsApps;C:\Users\julia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\julia\AppData\Roaming\npm;C:\jdk-17.0.12_windows-x64_bin\jdk-17.0.12\bin;C:\Users\julia\AppData\Local\Muse Hub\lib;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Transaccion nequi aprobada o declinada #1" classname="Pagos con nequi" time="8.584">
+    <system-out><![CDATA[
+@aprobadaDeclinada
+Scenario Outline: Transaccion nequi aprobada o declinada                                                &amp#27;[90m# src/test/resources/features/wompi_nequi.feature:13&amp#27;[0m
+|-- 1: Transaccion nequi aprobada o declinada ({amount_in_cents=200000, telefono=3991111111, referencia=ref-nequi-apr-006, estadoFinal=APPROVED})
+|---- Given Configuro el host y llaves
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mConfiguro el host y llaves&amp#27;[0m                                                                      &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.configuroElHostYLlaves()&amp#27;[0m
+|---- And Obtengo un acceptance token valido
+|------ Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:26 GMT
+apigw-requestid: PiCm8jiNIAMEPJw=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 5a334f8291e38975c678834100b052f2.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: smmTW39G0V9aZUj-va_CNS4tImocuFLCozHoOTkVUU9mjWNdJX7P0Q==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNDYtODgxNDciLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk0Nn0.kj8_KMgwCftXRoHjjojj5mLCJj2jv7hU1vvv-IQ0UqQ",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzQ2LTYzNDIwIiwiZW1haWwiOiIifQ.QNVEwxHdi2J8ODFmz-oHC79-Nn6PkR8ckclJv_Tems0",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mObtengo un acceptance token valido&amp#27;[0m                                                                &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.obtengoUnAcceptanceTokenValido()&amp#27;[0m
+|---- When creo una transaccion Nequi por 200000 COP con telefono 3991111111 y referencia ref-nequi-apr-006
+HTTP Status: 201
+Transaction ID: 15113-1755571348-82423
+Transaction Status: PENDING
+LAST_STATUS_CODE = 201
+TX_ID = 15113-1755571348-82423
+TX_STATUS = PENDING
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/transactions/15113-1755571348-82423
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 903
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:30 GMT
+vary: Origin
+apigw-requestid: PiCnohiuoAMEcqA=
+X-Cache: Miss from cloudfront
+Via: 1.1 ad3b284751d880099667fccef7bc24e6.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: ipCobpyH9e_ZDkXSDnbe9PddKFwwoB1fhosKJtsbxAw0a38AgHRNxw==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": "15113-1755571348-82423",
+        "created_at": "2025-08-19T02:42:28.868Z",
+        "finalized_at": "2025-08-19T02:42:29.414Z",
+        "amount_in_cents": 20000000,
+        "reference": "ref-nequi-apr-006",
+        "currency": "COP",
+        "payment_method_type": "NEQUI",
+        "payment_method": {
+            "type": "NEQUI",
+            "extra": {
+                "is_three_ds": false,
+                "transaction_id": "SANDBOX-1755571349eH6igd",
+                "three_ds_auth_type": null,
+                "external_identifier": "1755571349APlroJ"
+            },
+            "phone_number": "3991111111"
+        },
+        "payment_link_id": null,
+        "redirect_url": null,
+        "status": "APPROVED",
+        "status_message": null,
+        "merchant": {
+            "id": 5113,
+            "name": "Alejandra Pruebas Sandbox UAT",
+            "legal_name": "Alejandra Pruebas Sandbox UAT",
+            "contact_name": "Alejandra Pruebas Sandbox UAT",
+            "phone_number": "+573000000000",
+            "logo_url": null,
+            "legal_id_type": "CC",
+            "email": "pruebasensandbox@yopmail.com",
+            "legal_id": "1069879849",
+            "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7"
+        },
+        "taxes": [
+            
+        ],
+        "tip_in_cents": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo una transaccion Nequi por &amp#27;[0m&amp#27;[32m&amp#27;[1m200000&amp#27;[0m&amp#27;[32m COP con telefono &amp#27;[0m&amp#27;[32m&amp#27;[1m3991111111&amp#27;[0m&amp#27;[32m y referencia &amp#27;[0m&amp#27;[32m&amp#27;[1mref-nequi-apr-006&amp#27;[0m &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.creoUnaTransaccionNequiPorMontoCOPConTelefonoTelefonoYReferenciaReferencia(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+|---- Then la transaccion llega a un estado final APPROVED antes de agotar el tiempo de espera
+|------ Then Estado final de la transacci&oacute;n should be 'APPROVED'
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla transaccion llega a un estado final &amp#27;[0m&amp#27;[32m&amp#27;[1mAPPROVED&amp#27;[0m&amp#27;[32m antes de agotar el tiempo de espera&amp#27;[0m              &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.laTransaccionLlegaAUnEstadoFinalEstadoFinalAntesDeAgotarElTiempoDeEspera(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Transaccion nequi aprobada o declinada #2" classname="Pagos con nequi" time="3.716">
+    <system-out><![CDATA[
+@aprobadaDeclinada
+Scenario Outline: Transaccion nequi aprobada o declinada                                                &amp#27;[90m# src/test/resources/features/wompi_nequi.feature:14&amp#27;[0m
+|-- 2: Transaccion nequi aprobada o declinada ({amount_in_cents=200000, telefono=3992222222, referencia=ref-nequi-dec-005, estadoFinal=DECLINED})
+|---- Given Configuro el host y llaves
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mConfiguro el host y llaves&amp#27;[0m                                                                      &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.configuroElHostYLlaves()&amp#27;[0m
+|---- And Obtengo un acceptance token valido
+|------ Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:31 GMT
+apigw-requestid: PiCnvjCiIAMEPMQ=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 bedc7f726c5c61bbe5343fc78dc92c32.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: LfgKJmPvKmrc-VF5Vm8eJ9yxuo1L0X6IVxi-8DDog1bK7DSQqJhNWQ==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNTEtNjg2MDUiLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk1MX0.a_fJn_DodKJ-uZ57xspSKVSO9M8x4HgQ2s2INjJiWD4",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzUxLTgwNjA3IiwiZW1haWwiOiIifQ.0Skp0psU0Et4aDOZonlzprRJ-Wx45kokLvOUBua28PE",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mObtengo un acceptance token valido&amp#27;[0m                                                                &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.obtengoUnAcceptanceTokenValido()&amp#27;[0m
+|---- When creo una transaccion Nequi por 200000 COP con telefono 3992222222 y referencia ref-nequi-dec-005
+HTTP Status: 201
+Transaction ID: 15113-1755571352-25894
+Transaction Status: PENDING
+LAST_STATUS_CODE = 201
+TX_ID = 15113-1755571352-25894
+TX_STATUS = PENDING
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/transactions/15113-1755571352-25894
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 934
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:34 GMT
+vary: Origin
+apigw-requestid: PiCoPhLkIAMEP2Q=
+X-Cache: Miss from cloudfront
+Via: 1.1 96ec34ce0a0b54341f66006912ddc5d4.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: KgnuMB5hGOTVVz7xI1WLfoQ8q6qFcMV3VMpbTYamJRbppCBUlJqf2A==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": "15113-1755571352-25894",
+        "created_at": "2025-08-19T02:42:32.527Z",
+        "finalized_at": "2025-08-19T02:42:32.887Z",
+        "amount_in_cents": 20000000,
+        "reference": "ref-nequi-dec-005",
+        "currency": "COP",
+        "payment_method_type": "NEQUI",
+        "payment_method": {
+            "type": "NEQUI",
+            "extra": {
+                "is_three_ds": false,
+                "transaction_id": "SANDBOX-1755571352B693r1",
+                "three_ds_auth_type": null,
+                "external_identifier": "1755571352Qd4Ygo"
+            },
+            "phone_number": "3992222222"
+        },
+        "payment_link_id": null,
+        "redirect_url": null,
+        "status": "DECLINED",
+        "status_message": "Transacción RECHAZADA en Sandbox",
+        "merchant": {
+            "id": 5113,
+            "name": "Alejandra Pruebas Sandbox UAT",
+            "legal_name": "Alejandra Pruebas Sandbox UAT",
+            "contact_name": "Alejandra Pruebas Sandbox UAT",
+            "phone_number": "+573000000000",
+            "logo_url": null,
+            "legal_id_type": "CC",
+            "email": "pruebasensandbox@yopmail.com",
+            "legal_id": "1069879849",
+            "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7"
+        },
+        "taxes": [
+            
+        ],
+        "tip_in_cents": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo una transaccion Nequi por &amp#27;[0m&amp#27;[32m&amp#27;[1m200000&amp#27;[0m&amp#27;[32m COP con telefono &amp#27;[0m&amp#27;[32m&amp#27;[1m3992222222&amp#27;[0m&amp#27;[32m y referencia &amp#27;[0m&amp#27;[32m&amp#27;[1mref-nequi-dec-005&amp#27;[0m &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.creoUnaTransaccionNequiPorMontoCOPConTelefonoTelefonoYReferenciaReferencia(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+|---- Then la transaccion llega a un estado final DECLINED antes de agotar el tiempo de espera
+|------ Then Estado final de la transacci&oacute;n should be 'DECLINED'
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla transaccion llega a un estado final &amp#27;[0m&amp#27;[32m&amp#27;[1mDECLINED&amp#27;[0m&amp#27;[32m antes de agotar el tiempo de espera&amp#27;[0m              &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.laTransaccionLlegaAUnEstadoFinalEstadoFinalAntesDeAgotarElTiempoDeEspera(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Falla por firma de integridad invalida" classname="Pagos con nequi" time="2.085">
+    <system-out><![CDATA[
+@alterna1
+Scenario: Falla por firma de integridad invalida                     &amp#27;[90m# src/test/resources/features/wompi_nequi.feature:19&amp#27;[0m
+|-- Given Configuro el host y llaves
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mConfiguro el host y llaves&amp#27;[0m                                   &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.configuroElHostYLlaves()&amp#27;[0m
+|-- And Obtengo un acceptance token valido
+|---- Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:35 GMT
+apigw-requestid: PiCoUjHwoAMEZlA=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 2e9033da1cf7b64ac622ab535b39a266.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: HUrDxPOSzaZPixm_aVD9-tMFJRuKtPJ6NE58wyCBTcakypKRM3x4xQ==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNTUtNzA5NjIiLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk1NX0.UxFHY3gAduI2crS10CD_5mAnKGhkyLRGgQO7wp2hIWw",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzU1LTM5Mzg3IiwiZW1haWwiOiIifQ.lYtl6URNCRUIaVUZc90rZkoSL8lApNiqnIFZoF-8umY",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mObtengo un acceptance token valido&amp#27;[0m                             &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.obtengoUnAcceptanceTokenValido()&amp#27;[0m
+|-- When intento crear una transacción NEQUI con una firma invalida
+|---- Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:36 GMT
+apigw-requestid: PiCoahc8IAMEJxA=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 dce51d45ef5ad8611b405be0de5fb2da.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: hb87YtiDJxRdBQBlyI2RvkcY9pkd6F-4M8woQEY2XNwKPRQdzQOyKw==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNTUtNjAxMjAiLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk1NX0.IIhpnA7R525qjzxPFKVeMFEozM1uVgdI0Uh23qVbDuA",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzU1LTEwODUxIiwiZW1haWwiOiIifQ.AtsV5SOcW9Gq6Sg3hw7jp3PN090kTrEW4yg_YRnzw-M",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+|---- Qa create nequi transaction invalid signature
+HTTP Status: 422
+Response Body: {"error":{"type":"INPUT_VALIDATION_ERROR","messages":{"acceptance_token":["El token de aceptación está en un formato incorrecto"]}}}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mintento crear una transacciÃ³n NEQUI con una firma invalida&amp#27;[0m    &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.invalidSignature()&amp#27;[0m
+|-- Then la API responde con código 422 o 400 indicando error de firma
+|---- Then HTTP status code should be (is (422) or is (400))
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla API responde con cÃ³digo 422 o 400 indicando error de firma&amp#27;[0m &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.assertInvalidSignature()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Falla por acceptance_token ausente" classname="Pagos con nequi" time="1.506">
+    <system-out><![CDATA[
+@alterna2
+Scenario: Falla por acceptance_token ausente                    &amp#27;[90m# src/test/resources/features/wompi_nequi.feature:24&amp#27;[0m
+|-- Given Configuro el host y llaves
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mConfiguro el host y llaves&amp#27;[0m                              &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.configuroElHostYLlaves()&amp#27;[0m
+|-- And Obtengo un acceptance token valido
+|---- Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:37 GMT
+apigw-requestid: PiCopiByoAMEPlg=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 72aa1f6d307a536bbaffdcdb498b124c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: oPcs60iPBGWvr16-h9CZpUN7GrkeiL2nBksbmiO_-DodfGxqZ2qATA==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNTctMTA3MTYiLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk1N30.nkN6gHGGgqn1l7SnITwMenYBRmd5Rqlj8fnya4f4xmo",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzU3LTg1MTk5IiwiZW1haWwiOiIifQ.m_T9rsXYFZezgWdgiQdfFoMyY05neK3rntjqoOoHg-A",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mObtengo un acceptance token valido&amp#27;[0m                        &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.obtengoUnAcceptanceTokenValido()&amp#27;[0m
+|-- Given que limpio el acceptance_token en memoria
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mque limpio el acceptance_token en memoria&amp#27;[0m               &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.clearAcceptance()&amp#27;[0m
+|-- When intento crear una transaccion NEQUI sin acceptance_token
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mintento crear una transaccion NEQUI sin acceptance_token&amp#27;[0m &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.createWithoutAcceptance()&amp#27;[0m
+|-- Then la API responde con error por parametros invalidos
+|---- Then el c&oacute;digo HTTP should be (422)
+|---- Then el estado de la transacci&oacute;n should be a string containing 'UNKNOWN'
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla API responde con error por parametros invalidos&amp#27;[0m       &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.laAPIRespondeConErrorPorParametrosInvalidos()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Obtener acceptance_token desde /merchants/{PUBLIC_KEY}" classname="Pagos con nequi" time="1.101">
+    <system-out><![CDATA[
+@sanidad
+Scenario: Obtener acceptance_token desde /merchants/{PUBLIC_KEY} &amp#27;[90m# src/test/resources/features/wompi_nequi.feature:30&amp#27;[0m
+|-- Given Configuro el host y llaves
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mConfiguro el host y llaves&amp#27;[0m                               &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.configuroElHostYLlaves()&amp#27;[0m
+|-- And Obtengo un acceptance token valido
+|---- Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:39 GMT
+apigw-requestid: PiCo5gx1IAMEJzA=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 d7db6b9cdf796f6ea0cdbe5b3a75c84a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: 4yJSOaV6yCajp-513f5tUPsCuN6Eo9Ogb8_x8zrqMQsy3LPXaQXfTw==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNTktOTM3MjkiLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk1OX0.NAeYXNjuFJ-3S-0E10oWZk2eTWHVzPNGdUckiak5zd4",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzU5LTY4MzE0IiwiZW1haWwiOiIifQ.cGrt1-sLuWCKsiUychmJw1y6opZePb6TwOk-nvneP_Q",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mObtengo un acceptance token valido&amp#27;[0m                         &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.obtengoUnAcceptanceTokenValido()&amp#27;[0m
+|-- When consulto el endpoint de merchants con la llave pública
+|---- Qa get acceptance token
+Request method:	GET
+Request URI:	https://api-sandbox.co.uat.wompi.dev/v1/merchants/pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Tue, 19 Aug 2025 02:42:39 GMT
+apigw-requestid: PiCo9iN_IAMEJMg=
+vary: Origin
+vary: accept-encoding
+content-encoding: gzip
+X-Cache: Miss from cloudfront
+Via: 1.1 64f46386c7d793ef08095943662bb42a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MIA3-C3
+X-Amz-Cf-Id: vqheZa0Lan4SEuvbZ6YK3_zOn2x3Lb4ULY6dder0UP9eCdGccC6GPw==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+{
+    "data": {
+        "id": 5113,
+        "name": "Alejandra Pruebas Sandbox UAT",
+        "email": "pruebasensandbox@yopmail.com",
+        "contact_name": "Alejandra Pruebas Sandbox UAT",
+        "phone_number": "+573000000000",
+        "active": true,
+        "logo_url": null,
+        "legal_name": "Alejandra Pruebas Sandbox UAT",
+        "legal_id_type": "CC",
+        "legal_id": "1069879849",
+        "public_key": "pub_stagtest_g2u0HQd3ZMh05hsSgTS2lUV8t3s4mOt7",
+        "accepted_currencies": [
+            "COP"
+        ],
+        "fraud_javascript_key": null,
+        "fraud_groups": [
+            
+        ],
+        "accepted_payment_methods": [
+            "NEQUI",
+            "PSE",
+            "BANCOLOMBIA_TRANSFER",
+            "CARD",
+            "BANCOLOMBIA_COLLECT",
+            "BANCOLOMBIA_QR",
+            "DAVIPLATA",
+            "BANCOLOMBIA_BNPL",
+            "SU_PLUS"
+        ],
+        "payment_methods": [
+            {
+                "name": "BANCOLOMBIA_BNPL",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_BNPL_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_COLLECT",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_COLLECT_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_QR",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_QR_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "BANCOLOMBIA_TRANSFER",
+                "payment_processors": [
+                    {
+                        "name": "BANCOLOMBIA_TRANSFER_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "CARD",
+                "payment_processors": [
+                    {
+                        "name": "CARD_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "DAVIPLATA",
+                "payment_processors": [
+                    {
+                        "name": "DAVIPLATA_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "NEQUI",
+                "payment_processors": [
+                    {
+                        "name": "NEQUI_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "PSE",
+                "payment_processors": [
+                    {
+                        "name": "PSE_SANDBOX"
+                    }
+                ]
+            },
+            {
+                "name": "SU_PLUS",
+                "payment_processors": [
+                    {
+                        "name": "SU_PLUS_SANDBOX"
+                    }
+                ]
+            }
+        ],
+        "presigned_acceptance": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6MjQzLCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvcmVnbGFtZW50by1Vc3Vhcmlvcy1Db2xvbWJpYS5wZGYiLCJmaWxlX2hhc2giOiJkMWVkMDI3NjhlNDEzZWEyMzFmNzAwMjc0N2Y0N2FhOSIsImppdCI6IjE3NTU1NzEzNTktNzQ4NjUiLCJlbWFpbCI6IiIsImV4cCI6MTc1NTU3NDk1OX0.tvyi-1JYIlT-msbUMuz6Xkj_JwbRPBbmNFicdqxj4gk",
+            "permalink": "https://wompi.com/assets/downloadble/reglamento-Usuarios-Colombia.pdf",
+            "type": "END_USER_POLICY"
+        },
+        "presigned_personal_data_auth": {
+            "acceptance_token": "eyJhbGciOiJIUzI1NiJ9.eyJjb250cmFjdF9pZCI6NDc0LCJwZXJtYWxpbmsiOiJodHRwczovL3dvbXBpLmNvbS9hc3NldHMvZG93bmxvYWRibGUvYXV0b3JpemFjaW9uLXRyYXRhbWllbnRvLWRhdG9zLXBlcnNvbmFsZXMucGRmIiwiZmlsZV9oYXNoIjoiNTE2ODYzZjA3NzZlZWY3NjBkNGI5OWFiMWJlZjRjNzgiLCJqaXQiOiIxNzU1NTcxMzU5LTgxODkxIiwiZW1haWwiOiIifQ.oDP9wzUOZyvlPU5JCedMMGVdTce7pCRmlsTIVNrXDd0",
+            "permalink": "https://wompi.com/assets/downloadble/autorizacion-tratamiento-datos-personales.pdf",
+            "type": "PERSONAL_DATA_AUTH"
+        },
+        "click_to_pay_dpa_id": null,
+        "mcc": null,
+        "acquirer_id": null
+    },
+    "meta": {
+        
+    }
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mconsulto el endpoint de merchants con la llave pÃºblica&amp#27;[0m    &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.consultMerchants()&amp#27;[0m
+|-- Then recibo un acceptance_token no vacío
+|---- Then el acceptance_token should be not (null or an empty string)
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mrecibo un acceptance_token no vacÃ­o&amp#27;[0m                       &amp#27;[90m# co.e2e.wompi.stepdefinitions.WompiSteps.assertAcceptance()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
