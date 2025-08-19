@@ -77,10 +77,14 @@ finalizaron con **estado exitoso (100%)**:
 -   **Serenity BDD** entregó reportes detallados que facilitan el
     análisis de resultados.
 -   Se cubrieron tanto los **flujos exitosos** como los **flujos
-    alternos**, garantizando robustez en las validaciones.\
+    alternos**, garantizando robustez en las validaciones.
 -   La ejecución fue exitosa con un **100% de pruebas aprobadas** en la
     última corrida.
 
 ------------------------------------------------------------------------
 
-👨‍💻 Autor: *\[Tu nombre aquí\]*
+## Reportes de ejecución
+
+![Evidencia_1](Reporte/evidencia_1.png)
+![Evidencia_2](Reporte/evidencia_2.png)
+![Evidencia_3](Reporte/evidencia_3.png)
