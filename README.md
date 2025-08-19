@@ -34,7 +34,8 @@ Para ejecutar los escenarios:
 mvn clean verify
 ```
 
-Este comando: - Compila el proyecto
+Este comando: 
+- Compila el proyecto
 - Ejecuta los escenarios definidos en Cucumber
 - Genera los reportes de Serenity BDD y Cucumber
 
